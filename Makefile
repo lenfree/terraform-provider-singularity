@@ -7,7 +7,6 @@ test: dep env
 
 .PHONY: vendor
 vendor: dep
-	$(eval GO111MODULE := on)
 	dep ensure
 
 .PHONY: dep
