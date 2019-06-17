@@ -7,6 +7,7 @@ test: dep env
 
 .PHONY: dep
 dep:
+	$(eval GO111MODULE := on)
 	go get github.com/hashicorp/terraform@v0.12.0
 	go get github.com/tcnksm/ghr
 	go get github.com/mitchellh/gox
